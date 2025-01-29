@@ -48,4 +48,4 @@ Remplacez `<dockerhub-username>`, `<dockerhub-password>` et `<dockerhub-email>` 
 
 ---
 
-Vous êtes maintenant prêt à builder votre image avec Kaniko ! 🚀
+Vous êtes maintenant prêt à builder votre image avec Kaniko et tester votre image ! 🚀
