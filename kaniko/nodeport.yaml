@@ -1,0 +1,19 @@
+apiVersion: v1                                                                                                                                       
+kind: Service                                                                                                                                        
+metadata:                                                                                                                                           
+  labels:                                                                                                                                            
+    run: webapp                                                                                                                                      
+  name: webapp                                                                                                                                       
+  namespace: default                                                                                                                                 
+spec:                                                                                                                           
+  ports:                                                                                                                                             
+  - nodePort: 30453                                                                                                                                  
+    port: 80                                                                                                                                         
+    protocol: TCP                                                                                                                                    
+    targetPort: 80                                                                                                                                   
+  selector:                                                                                                                                          
+    run: webapp                                                                                                                                      
+  sessionAffinity: None                                                                                                                              
+  type: NodePort                                                                                                                                     
+status:                                                                                                                                              
+  loadBalancer: {}
